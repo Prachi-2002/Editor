@@ -36,7 +36,7 @@ function SelectionPlugin() {
 
   return (
     <div>
-      <p style={{color: 'red'}}>Selected Text: {selectedText || 'No text selected'}</p>
+      <p style={{color: 'green'}}>Selected Text: {selectedText || 'No text selected'}</p>
     </div>
   );
 }

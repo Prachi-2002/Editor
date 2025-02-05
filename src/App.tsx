@@ -106,18 +106,18 @@ export default function App() {
   return (
     <div ref={containerRef}>
       <p>
-        <b>Used provider:</b>{' '}
+        {/* <b>Used provider:</b>{' '}
         {providerName === 'webrtc'
-          ? 'WebRTC (within browser communication via BroadcastChannel fallback, unless run locally)'
+          ? ''
           : 'Websockets (cross-browser communication)'}
-        <br />
-        {window.location.hostname === 'localhost' ? (
+        <br /> */}
+        {/* {window.location.hostname === 'localhost' ? (
           providerName === 'webrtc' ? (
             <a href="/app?provider=wss">Enable WSS</a>
           ) : (
             <a href="/app">Enable WebRTC</a>
           )
-        ) : null}{' '}
+        ) : null}{' '} */}
         {/* WebRTC provider doesn't implement disconnect correctly */}
         {providerName !== 'webrtc' ? (
           <button onClick={handleConnectionToggle}>
